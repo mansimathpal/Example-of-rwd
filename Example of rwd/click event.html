@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').bind({
+                mouseover:function(){
+                    $('#btn1').val("Do not click me");
+                    $('#btn2').val("Click me");}
+            });
+            $('#btn2').bind({
+                mouseover:function(){
+                    $('#btn2').val("Do not click me");
+                    $('#btn1').val("Click me");}
+            });
+        })
+    </script>
+</head>
+<body>
+  <input type="button" id="btn1" value="Click me">
+  <br>
+  <br>
+  <input type="button" id="btn2" value="Do not click me">  
+</body>
+</html>

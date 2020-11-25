@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>
+<body>
+   <form>
+   UserName:<input type="text" name="name"><br>
+   Password:<input type="password" name="password"><br>
+
+   <input type="button" value="login" id="SubmitButton" />
+   <input type="submit" value="Cancel">
+   </form> 
+
+   <script>
+    $(document).ready(function()
+    {
+        $('#SubmitButton').click(function()
+        {
+            var inputs=$('input');
+            var uname=$(inputs[0]).val();
+            var pwd=$(inputs[1]).val();
+            if(uname=="mansi"&& pwd=="india")
+            {
+                alert("Login Successfull");
+            }
+            else
+            {
+                alert("Check Password");
+            }
+        });
+    });
+   </script>
+</body>
+</html>

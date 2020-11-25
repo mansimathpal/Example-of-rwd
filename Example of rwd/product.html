@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        $(document).ready(function(){
+        $("#bt1").click(function(){
+        $("#toload").load("laptop.html");
+        });
+        $("#bt2").click(function(){
+        $("#toload").load("pendrive.html");
+        });
+        $("#bt3").click(function(){
+        $("#toload").load("mobile.html");
+        });
+        });
+    </script>
+</head>
+<body>
+Product Manufacturing
+<form>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$5000</td>
+            <td><input type="submit" id="bt1" value="know more"></td>
+        </tr>
+        <tr>
+            <td>Pendrive</td>
+            <td>$50</td>
+            <td><input type="submit" id="bt2" value="know more"></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>$1000</td>
+            <td><input type="submit" id="bt3" value="know more"></td>
+        </tr>
+    </table>
+<div id="toload"></div>
+</form>
+</body>
+</html>
